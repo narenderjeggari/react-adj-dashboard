@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #root, #root>div {
-  height: 100%
+* {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+html,
+body,
+#root,
+#root > div {
+  height: 100%;
 }
