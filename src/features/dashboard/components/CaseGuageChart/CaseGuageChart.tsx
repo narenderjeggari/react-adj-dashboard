@@ -5,14 +5,16 @@ const CaseGuageChart = () => {
   const getData = () => {
     return [
       ["Label", "Value"],
-      ["New", Math.random() * 100],
-      ["High", Math.random() * 100],
-      ["Completed", Math.random() * 100],
+      ["My Slef", Math.random() * 100],
+      ["My Unit", Math.random() * 100],
+      ["Others Unit", Math.random() * 100],
     ];
   };
   const [data, setData] = useState(getData);
 
   const options = {
+    width: 500,
+    height: 150,
     greenFrom: 75,
     greenTo: 100,
     redFrom: 0,
@@ -20,7 +22,6 @@ const CaseGuageChart = () => {
     yellowFrom: 50,
     yellowTo: 75,
     minorTicks: 5,
-    
   };
 
   useEffect(() => {
@@ -33,14 +34,7 @@ const CaseGuageChart = () => {
     };
   });
 
-  return (
-    <Chart
-      chartType="Gauge"
-      height="inherit"
-      data={data}
-      options={options}
-    />
-  );
+  return <Chart chartType="Gauge" data={data} options={options} />;
 };
 
 export default CaseGuageChart;
