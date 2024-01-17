@@ -10,12 +10,12 @@ const DashboardLayout = () => {
   return (
     <div className="flex h-full w-full">
       <div className="dashboard-left-panel border-r border-black p-6 h-full flex flex-col items-center justify-evenly">
-      <span className="text-xl font-bold cursor-pointer pr-10">Dashboard</span>
-        <span className="text-xl font-bold cursor-pointer">Notifications</span>
-        <span className="text-xl font-bold cursor-pointer">Tasks</span>
-        <span className="text-xl font-bold cursor-pointer">Pages</span>
-        <span className="text-xl font-bold cursor-pointer">Maps</span>
-        <span className="text-xl font-bold cursor-pointer">Charts</span>
+      <span className="text-xl font-bold cursor-pointer">Dashboard</span>
+        <span className="text-lg font-semibold cursor-pointer">Notifications</span>
+        <span className="text-lg font-semibold cursor-pointer">Tasks</span>
+        <span className="text-lg font-semibold cursor-pointer">Pages</span>
+        <span className="text-lg font-semibold cursor-pointer">Maps</span>
+        <span className="text-lg font-semibold cursor-pointer">Charts</span>
       </div>
       <div className="flex flex-col h-full gap-4 dashboard-right-panel p-6">
         <Typography variant="h4">Welcome, Caseload</Typography>
