@@ -1,43 +1,50 @@
 import * as React from "react";
-import { DataGrid, GridColDef } from "@mui/x-data-grid";
+import { DataGrid, GridColDef, gridClasses } from "@mui/x-data-grid";
+import { styled } from "@mui/material";
+
+const StyledDataGrid = styled(DataGrid)(({ theme }) => ({
+  [`& .${gridClasses.columnHeaders}`]: {
+    backgroundColor: theme.palette.grey[300]
+  }
+}));
 
 const CaseDataTable = () => {
   const columns: GridColDef[] = [
     {
       field: "casenumber",
       headerName: "Case #",
-      width: 100,
+      flex: 1
     },
     {
       field: "claimant",
       headerName: "Claimant",
-      width: 150,
+      flex: 1
     },
     {
       field: "priority",
       headerName: "Priority",
-      width: 80,
+      flex: 1
     },
     {
       field: "caseage",
       headerName: "Case Age",
-      width: 80,
       type: "number",
+      flex: 1
     },
     {
       field: "mostrecentremedy",
       headerName: "Most Recent Remedy",
-      width: 200,
+      flex: 2
     },
     {
       field: "casecharacteristics",
       headerName: "Case Characteristics",
-      width: 300,
+      flex: 2
     },
     {
       field: "nextfollowup",
       headerName: "Next Follow-up",
-      width: 200,
+      flex: 1
     },
   ];
 
@@ -134,7 +141,7 @@ const CaseDataTable = () => {
     },
   ];
   return (
-    <DataGrid
+    <StyledDataGrid
       rows={rows}
       columns={columns}
       initialState={{

@@ -2,46 +2,42 @@ import React from "react";
 import CaseDataTable from "../CaseDataTable/CaseDataTable";
 import CaseBarChart from "../CaseBarChart/CaseBarChart";
 import CaseGuageChart from "../CaseGuageChart/CaseGuageChart";
-import CaseAlerts from "../CaseAlerts/CaseAlerts";
+import { Grid, Paper, Typography } from "@mui/material";
 import CaseStatusCard from "../CaseStatusCard/CaseStatusCard";
-import { Typography } from "@mui/material";
 
 const DashboardLayout = () => {
   return (
-    <div className="flex h-full w-full">
-      <div className="dashboard-left-panel border-r border-black p-6 h-full flex flex-col items-center justify-evenly">
-      <span className="text-xl font-bold cursor-pointer">Dashboard</span>
-        <span className="text-lg font-semibold cursor-pointer">Notifications</span>
-        <span className="text-lg font-semibold cursor-pointer">Tasks</span>
-        <span className="text-lg font-semibold cursor-pointer">Pages</span>
-        <span className="text-lg font-semibold cursor-pointer">Maps</span>
-        <span className="text-lg font-semibold cursor-pointer">Charts</span>
-      </div>
-      <div className="flex flex-col h-full gap-4 dashboard-right-panel p-6">
-        <Typography variant="h4">Welcome, Caseload</Typography>
-        <div className="flex h-1/3 gap-4">
-          <div className="flex-1 h-full">
-            <CaseGuageChart></CaseGuageChart>
-          </div>
-          <div className="flex-1 h-full border-black border">
-            <CaseAlerts></CaseAlerts>
-          </div>
-        </div>
-        <div className="flex flex-col gap-4 w-full h-2/3">
-          <div className="flex gap-4 w-full h-1/3">
-            <CaseStatusCard></CaseStatusCard>
-          </div>
-          <div className="flex gap-4 w-full h-2/3">
-            <div className="w-1/2 h-full">
-              <CaseDataTable></CaseDataTable>
-            </div>
-            <div className="w-1/2 h-full">
+    <Grid container spacing={3} className="h-full">
+      <Grid item xs={12}>
+        <Typography variant="h5" className="py-3">
+          Dashboard
+        </Typography>
+      </Grid>
+      <Grid item xs={12}>
+        <Grid container spacing={3}>
+          <Grid item xs={6}>
+            <Paper className="p-2" sx={{ height: 255 }}>
+              <Typography variant="h6" className="pb-2">Units</Typography>
+              <CaseGuageChart></CaseGuageChart>
+            </Paper>
+          </Grid>
+          <Grid item xs={6} className="!h-full">
+            <Paper className="p-2">
+              <Typography variant="h6" className="pb-2">Employee Status</Typography>
               <CaseBarChart></CaseBarChart>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </Paper>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid item xs={12}>
+        <CaseStatusCard></CaseStatusCard>
+      </Grid>
+      <Grid item xs={12}>
+        <Paper>
+          <CaseDataTable></CaseDataTable>
+        </Paper>
+      </Grid>
+    </Grid>
   );
 };
 

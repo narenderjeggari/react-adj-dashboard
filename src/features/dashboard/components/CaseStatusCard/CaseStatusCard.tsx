@@ -11,23 +11,26 @@ const CaseStatusCard = () => {
   const data: CaseStatusModel[] = [
     {
       status: "New",
-      className: "text-blue-400 border-blue-500 border bg-blue-500 hover:-translate-y-1 hover:blue-500 hover:bg-blue-500 duration-300",
+      className:
+        "border-blue-400 border bg-blue-400 hover:-translate-y-1 hover:bg-blue-400 duration-300",
       numberOfCases: 20,
     },
     {
       status: "High Priority",
-      className: "text-red-600 border-red-600 border bg-red-600 hover:-translate-y-1 hover:red-600 hover:bg-red-600 duration-300",
+      className:
+        "border-red-400 border bg-red-400 hover:-translate-y-1 hover:bg-red-400 duration-300",
       numberOfCases: 30,
     },
     {
       status: "Overdue",
-      className: "text-yellow-400 border-yellow-400 border bg-yellow-400 hover:-translate-y-1 hover:yellow-400 hover:bg-yellow-400 duration-300",
+      className:
+        "text-yellow-400 border-yellow-400 border bg-yellow-400 hover:-translate-y-1 hover:yellow-400 hover:bg-yellow-400 duration-300",
       numberOfCases: 10,
     },
     {
       status: "Bankruptcy",
       className:
-        "text-green-600 border-green-600 border bg-green-600 hover:-translate-y-1 hover:green-600 hover:bg-green-600 duration-300",
+        "border-green-400 border bg-green-400 hover:-translate-y-1 hover:bg-green-400 duration-300",
       numberOfCases: 50,
     },
   ];

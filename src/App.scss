@@ -5,3 +5,9 @@
 .dashboard-right-panel {
     width: calc(100% - 300px);
 }
+
+.main-container {
+    max-width: 100% !important;
+    height: calc(100% - 64px);
+    overflow: auto;
+}
