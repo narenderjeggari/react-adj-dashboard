@@ -59,7 +59,7 @@ const LeftNavBar = () => {
       <Toolbar />
       <List component="nav">
         <React.Fragment>
-          <ListItemButton className="">
+          <ListItemButton className="!bg-gray-300 !bg-opacity-70">
             <ListItemIcon>
               <DashboardOutlined className="text-slate-600"/>
             </ListItemIcon>
