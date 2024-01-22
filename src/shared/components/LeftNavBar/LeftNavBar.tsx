@@ -25,6 +25,7 @@ const MUIDrawer = styled(Drawer, {
     position: "relative",
     whiteSpace: "nowrap",
     width: drawerWidth,
+    backgroundColor: '#e2e2e2',
     transition: theme.transitions.create("width", {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
@@ -48,7 +49,8 @@ const MUIListItemText = styled(ListItemText)(() => ({
   "& .MuiTypography-root": {
     fontWeight: 500,
     fontSize: 18,
-  },
+    color: '#475569'
+  }
 }));
 
 const LeftNavBar = () => {
@@ -57,33 +59,33 @@ const LeftNavBar = () => {
       <Toolbar />
       <List component="nav">
         <React.Fragment>
-          <ListItemButton className="!border-l-4 !border-blue-400 !border-solid !bg-blue-100 !text-blue-500">
+          <ListItemButton className="">
             <ListItemIcon>
-              <DashboardOutlined className="text-blue-500"/>
+              <DashboardOutlined className="text-slate-600"/>
             </ListItemIcon>
             <MUIListItemText primary="Dashboard" />
           </ListItemButton>
           <ListItemButton>
             <ListItemIcon>
-              <ShoppingCartOutlined />
+              <ShoppingCartOutlined className="text-slate-600"/>
             </ListItemIcon>
             <MUIListItemText primary="Orders" />
           </ListItemButton>
           <ListItemButton>
             <ListItemIcon>
-              <PeopleOutlined />
+              <PeopleOutlined className="text-slate-600"/>
             </ListItemIcon>
             <MUIListItemText primary="Customers" />
           </ListItemButton>
           <ListItemButton>
             <ListItemIcon>
-              <BarChartOutlined />
+              <BarChartOutlined className="text-slate-600"/>
             </ListItemIcon>
             <MUIListItemText primary="Reports" />
           </ListItemButton>
           <ListItemButton>
             <ListItemIcon>
-              <LayersOutlined />
+              <LayersOutlined className="text-slate-600"/>
             </ListItemIcon>
             <MUIListItemText primary="Integrations" />
           </ListItemButton>
