@@ -48,8 +48,7 @@ const MUIDrawer = styled(Drawer, {
 const MUIListItemText = styled(ListItemText)(() => ({
   "& .MuiTypography-root": {
     fontWeight: 500,
-    fontSize: 18,
-    color: '#475569'
+    fontSize: 18
   }
 }));
 
@@ -59,9 +58,9 @@ const LeftNavBar = () => {
       <Toolbar />
       <List component="nav">
         <React.Fragment>
-          <ListItemButton className="!bg-gray-300 !bg-opacity-70">
+          <ListItemButton className="!bg-gray-300 !bg-opacity-70 !text-sky-600">
             <ListItemIcon>
-              <DashboardOutlined className="text-slate-600"/>
+              <DashboardOutlined className="text-sky-600"/>
             </ListItemIcon>
             <MUIListItemText primary="Dashboard" />
           </ListItemButton>

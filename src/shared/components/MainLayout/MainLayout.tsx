@@ -7,15 +7,16 @@ import DashboardLayout from "features/dashboard/components/DashboardLayout/Dashb
 // Main component
 function MainLayout() {
   return (
-    <Box sx={{ display: "flex", height: '100%' }}>
+    <Box sx={{ display: "flex", position: "relative", height: "100%" }}>
       <Header />
       <LeftNavBar />
-      <Box component="main">
+      <Box component="main" >
         <Toolbar />
-        <Container className="main-container bg-gray-100">
+        <Container className="main-container bg-gray-100 mb-16">
           <DashboardLayout />
         </Container>
       </Box>
+      <div className="absolute bottom-0 left-0 w-full h-14 bg-slate-500 text-white app-footer"></div>
     </Box>
   );
 }

@@ -13,38 +13,38 @@ const CaseDataTable = () => {
     {
       field: "casenumber",
       headerName: "Case #",
-      flex: 1
+      width:80
     },
     {
       field: "claimant",
       headerName: "Claimant",
-      flex: 1
+      width:100
     },
     {
       field: "priority",
       headerName: "Priority",
-      flex: 1
+      width:100
     },
     {
       field: "caseage",
       headerName: "Case Age",
       type: "number",
-      flex: 1
+      width:100
     },
     {
       field: "mostrecentremedy",
       headerName: "Most Recent Remedy",
-      flex: 2
+      width:150
     },
     {
       field: "casecharacteristics",
       headerName: "Case Characteristics",
-      flex: 2
+      width:300
     },
     {
       field: "nextfollowup",
       headerName: "Next Follow-up",
-      flex: 1
+      width:150
     },
   ];
 

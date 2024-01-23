@@ -28,13 +28,13 @@ const AppBar = styled(MuiAppBar, {
 
 const Header = () => {
   return (
-    <AppBar position="absolute" sx={{ backgroundColor: "white" }}>
+    <AppBar position="absolute" >
       <Toolbar
         sx={{
           pr: "24px", // keep right padding when drawer closed
         }}
       >
-        <Typography component="h1" variant="h6" className="text-blue-400 !tracking-wider" fontWeight={600} noWrap>
+        <Typography component="h1" variant="h6" className="!tracking-wider" fontWeight={600} noWrap>
           ADJ Dashboard
         </Typography>
         <Box sx={{ flexGrow: 1 }} />
@@ -45,11 +45,11 @@ const Header = () => {
             edge="end"
             aria-label="account of current user"
             aria-haspopup="true"
-            color="primary"
+            color="inherit"
           >
             <AccountCircle />
           </IconButton>
-          <span className="pl-2 text-gray-500 font-medium">Welcome, Srujana</span>
+          <span className="pl-2 text-white font-medium">Welcome, Srujana</span>
         </Box>
       </Toolbar>
     </AppBar>

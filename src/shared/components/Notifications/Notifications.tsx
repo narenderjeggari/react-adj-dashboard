@@ -164,7 +164,7 @@ export default function Notifications() {
         }}
       >
         <IconButton
-          color="primary"
+          color="inherit"
           ref={anchorRef}
           aria-controls={open ? "notifications-popup" : undefined}
           aria-haspopup="true"
@@ -179,7 +179,7 @@ export default function Notifications() {
           } ${"unreadNotifications"}`}
           data-ga-event-category="AppBar"
           data-ga-event-action="toggleNotifications"
-          onClick={handleToggle}
+          onClick={handleToggle}          
         >
           <Badge
             color="error"

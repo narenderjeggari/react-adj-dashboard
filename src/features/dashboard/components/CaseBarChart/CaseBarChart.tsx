@@ -9,7 +9,7 @@ const CaseBarChart = () => {
     ["Ashton Cox", 15, 5, 10, 30],
     ["Cedric Kelly", 20, 10, 40, 60],
   ];
-  return <Chart chartType="Bar" height="inherit" data={data} />;
+  return <Chart chartType="Bar" height="90%" data={data} />;
 };
 
 export default CaseBarChart;

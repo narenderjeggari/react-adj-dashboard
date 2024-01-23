@@ -11,3 +11,15 @@
     height: calc(100% - 64px);
     overflow: auto;
 }
+
+.alerts-remainders {
+    height: 207px;
+    max-height: 207px;
+    > :nth-child(2) {
+        background-color: #e0e0e0;
+    }
+}
+
+.app-footer {
+    z-index: 1300;
+}
