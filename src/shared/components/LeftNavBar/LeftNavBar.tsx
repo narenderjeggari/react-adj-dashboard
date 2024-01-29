@@ -10,11 +10,10 @@ import {
 import React from "react";
 
 import {
-  LayersOutlined,
-  BarChartOutlined,
-  PeopleOutlined,
-  ShoppingCartOutlined,
   DashboardOutlined,
+  TaskOutlined,
+  CalendarMonthOutlined,
+  PagesOutlined
 } from "@mui/icons-material";
 
 const drawerWidth: number = 300;
@@ -66,28 +65,22 @@ const LeftNavBar = () => {
           </ListItemButton>
           <ListItemButton>
             <ListItemIcon>
-              <ShoppingCartOutlined className="text-slate-600"/>
+              <TaskOutlined className="text-slate-600"/>
             </ListItemIcon>
-            <MUIListItemText primary="Orders" />
+            <MUIListItemText primary="Tasks" />
           </ListItemButton>
           <ListItemButton>
             <ListItemIcon>
-              <PeopleOutlined className="text-slate-600"/>
+              <PagesOutlined className="text-slate-600"/>
             </ListItemIcon>
-            <MUIListItemText primary="Customers" />
+            <MUIListItemText primary="Pages" />
           </ListItemButton>
           <ListItemButton>
             <ListItemIcon>
-              <BarChartOutlined className="text-slate-600"/>
+              <CalendarMonthOutlined className="text-slate-600"/>
             </ListItemIcon>
-            <MUIListItemText primary="Reports" />
-          </ListItemButton>
-          <ListItemButton>
-            <ListItemIcon>
-              <LayersOutlined className="text-slate-600"/>
-            </ListItemIcon>
-            <MUIListItemText primary="Integrations" />
-          </ListItemButton>
+            <MUIListItemText primary="Calendar" />
+          </ListItemButton>          
         </React.Fragment>
       </List>
     </MUIDrawer>
