@@ -12,7 +12,7 @@ function MainLayout() {
       <LeftNavBar />
       <Box component="main" >
         <Toolbar />
-        <Container className="main-container bg-gray-100 mb-16">
+        <Container className="main-container bg-gray-100">
           <DashboardLayout />
         </Container>
       </Box>

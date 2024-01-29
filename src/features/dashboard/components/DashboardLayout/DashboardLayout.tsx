@@ -8,7 +8,7 @@ import CaseAlerts from "../CaseAlerts/CaseAlerts";
 
 const DashboardLayout = () => {
   return (
-    <Grid container spacing={3} className="h-full">
+    <Grid container spacing={3}>
       <Grid item xs={12}>
         <Typography variant="h5" className="py-3">
           Dashboard
