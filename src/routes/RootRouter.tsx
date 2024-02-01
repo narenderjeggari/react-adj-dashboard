@@ -5,9 +5,9 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import Login from "shared/components/Login/Login";
 import MainLayout from "shared/components/MainLayout/MainLayout";
 import ProtectedRoute from "./ProtectedRoute";
+import Form from "shared/components/authentication/Form/Form";
 
 const RootRouter = () => {
   return (
@@ -15,7 +15,7 @@ const RootRouter = () => {
       <Router basename="/">
         <Routes>
           <Route path="/dashboard" element={<ProtectedRoute><MainLayout /></ProtectedRoute>} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Form />} />
           <Route path="/" element={<Navigate to="/login" replace />} />
         </Routes>
       </Router>
